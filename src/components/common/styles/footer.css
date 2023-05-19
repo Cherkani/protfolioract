@@ -1,0 +1,33 @@
+.footer {
+	display: flex;
+	padding-top: 7px; /* Réduire la marge supérieure */
+	padding-bottom: 7px; /* Réduire la marge inférieure */
+	align-items: center;
+	background-color: #fefee2;
+	color: #fff;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+}
+
+.footer-links,
+.footer-credits {
+	flex-basis: 50%;
+}
+
+.footer-links {
+	margin-left: -20px; /* Réduire la marge gauche */
+}
+
+.footer-nav-link-item {
+	font-weight: bold;
+	font-size: 70%; /* Réduire la taille de police */
+}
+
+.footer-credits-text {
+	justify-content: flex-end;
+	color: var(--tertiary-color);
+	font-size: 12px; /* Réduire la taille de police */
+	text-align: right;
+}
