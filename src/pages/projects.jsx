@@ -26,7 +26,7 @@ const Projects = () => {
 					
 					<div className="projects-container">
 					<Heading className="skills-heading">
-				{" "}
+				
 				<FontAwesomeIcon icon={faCode} className="skills-icon" />
 				<span className="skills-heading">Project Experience</span>
 			</Heading>

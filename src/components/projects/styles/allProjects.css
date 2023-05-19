@@ -4,19 +4,19 @@
 	align-items: stretch;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	margin-left: -35px;
-	margin-right: -35px;
+	margin-right: -10px; /* Supprimer la marge à droite */
 }
 
 .all-projects-project {
-	width: calc(100% / 3);
+	width: 100%; /* Afficher chaque projet sur une ligne */
 	box-sizing: border-box;
 	padding: 10px;
 	overflow: hidden;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
 	.all-projects-project {
-		width: calc(100% / 2);
+		width: calc(100% / 3);
+		margin-right: 0; /* Supprimer la marge à droite */
 	}
 }

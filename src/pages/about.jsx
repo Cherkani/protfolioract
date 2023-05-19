@@ -31,11 +31,12 @@ const About = () => {
             </div>
             
           </div>
-          <div className="page-footer">
-            <Footer />
-          </div>
+         
         </div>
       </div>
+      <div className="page-footer">
+            <Footer />
+          </div>
     </React.Fragment>
   );
 };

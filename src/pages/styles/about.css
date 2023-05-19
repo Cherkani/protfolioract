@@ -2,7 +2,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 100vh;
+	min-height: 10vh; /* Utilisez min-height au lieu de height */
 	margin: 0;
 	padding: 120px 50px;
 	padding-left: 50px;
