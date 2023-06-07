@@ -32,18 +32,17 @@ const INFO = {
 			title: "Laravel",
 			description:
 				"E-commerce CRM Solution: Streamline and Enhance Customer Relationship Management.",
-			logo: "https://thelogofinder.com/wp-content/uploads/edd/2021/10/laravel-2.svg",
+			logo: "laravel.png",
 			linkText: "Link",
 			link: "https://github.com/Cherkani/-PFA-.git",
 		},
-
 		{
-			title: "Python",
+			title: "React Native",
 			description:
-				"Fuel Depot Shortcut Project: Finding the Most Efficient Path to the Gas Station.",
-			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+				"Profsswap is a mobile application for university professor exchanges.",
+			logo: "react.png",
 			linkText: "Link",
-			link: "https://github.com/Cherkani/fuel_short_path_first_project_python.git",
+			link: "https://github.com/Cherkani/ProfSwap",
 		},
 
 		{
@@ -58,7 +57,7 @@ const INFO = {
 		{
 			title: "Laravel",
 			description: " CRUD  management system for machines in rooms.",
-			logo: "https://thelogofinder.com/wp-content/uploads/edd/2021/10/laravel-2.svg",
+			logo: "laravel.png",
 			linkText: "Link",
 			link: "https://github.com/Cherkani/laravel-first-project",
 		},
@@ -66,9 +65,25 @@ const INFO = {
 		{
 			title: "React Native",
 			description: "Pokédex.",
-			logo: "https://cdn-icons-png.flaticon.com/512/760/760457.png",
+			logo: "react.png",
 			linkText: "Link",
 			link: "https://github.com/Cherkani/PokeDex-RN-App.git",
+		},
+		{
+			title: "Library Management",
+			description:
+				"A library management system for handling book borrowing and returns.",
+			logo: "java.png",
+			linkText: "Link",
+			link: "https://github.com/Cherkani/JAVA_GESTION_librairie",
+		},
+		{
+			title: "Python",
+			description:
+				"Fuel Depot Shortcut Project: Finding the Most Efficient Path to the Gas Station.",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+			linkText: "Link",
+			link: "https://github.com/Cherkani/fuel_short_path_first_project_python.git",
 		},
 	],
 };

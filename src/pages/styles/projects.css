@@ -26,7 +26,10 @@
 		padding-top: 60px;
 	}
 
-	.projects-project {
-		width: calc(100% / 2);
+	.projects-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 0;
+		margin-right: 0;
 	}
 }

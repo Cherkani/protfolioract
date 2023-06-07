@@ -66,7 +66,7 @@ export const skills = [
 		tag: "backend",
 	},
 	{
-		icon: "https://thelogofinder.com/wp-content/uploads/edd/2021/10/laravel-2.svg",
+		icon: "laravel.png",
 		title: "Laravel",
 		tag: "backend",
 	},

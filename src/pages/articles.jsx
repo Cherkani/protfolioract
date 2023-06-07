@@ -1,10 +1,12 @@
+
 import React from 'react';
 import { Card } from 'primereact/card';
-import 'primereact/resources/themes/saga-blue/theme.css';
-import 'primereact/resources/primereact.min.css';
 import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Heading } from '@chakra-ui/react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 import NavBar from '../components/common/navBar';
 import Footer from '../components/common/footer';
@@ -15,68 +17,65 @@ const Articles = () => {
   const certifications = [
     {
       id: 1,
-      title: 'java FX',
      
       image: 'c1.png',
+     
     },
     {
       id: 2,
-      title: 'PHP',
      
       image: 'c2.png',
+     
     },
     {
       id: 3,
-      title: 'JS',
-     
+    
       image: 'c3.png',
-    }
-	,{
-		id: 3,
-		title: 'wordpress',
-	   
-		image: 'c4.png',
-	  }
-    // Add more certifications as needed
+    
+    },
+    {
+      id: 4,
+     
+      image: 'c4.png',
+    
+    },
+    // Ajoutez plus de certifications au besoin
   ];
 
-  const certificationTemplate = (certification) => {
-    return (
-      <div style={{ textAlign: 'center' }}>
-        <Heading className="skills-heading">
-          <FontAwesomeIcon icon={faCertificate} className="skills-icon" />
-          <span className="skills-heading">Achievements</span>
-        </Heading>
-        <Card title={certification.title}>
-          <img src={certification.image} alt={certification.title} style={{ maxWidth: '300px', height: 'auto' }} />
-          <p>{certification.description}</p>
-        </Card>
-      </div>
-    );
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
   };
+
+  
 
   return (
     <div>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
       <NavBar active="articles" />
       <Heading className="skills-heading">
         <FontAwesomeIcon icon={faCertificate} className="skills-icon" />
         <span className="skills-heading"> Achievements</span>
       </Heading>
-      <div>
-        {certifications.map((certification) => (
-          <div key={certification.id} style={{ textAlign: 'center' }}>
-            <Card title={certification.title}>
-              <img src={certification.image} alt={certification.title} style={{ maxWidth: '300px', height: 'auto' }} />
-              <p>{certification.description}</p>
-            </Card>
-          </div>
-        ))}
+      <div className="slider-container">
+  <Slider {...sliderSettings}>
+    {certifications.map((certification) => (
+      <div key={certification.id} className="slider-item">
+        <Card title={certification.title}>
+          <img
+            src={certification.image}
+            alt={certification.title}
+            className="certification-image"
+          />
+          <p>{certification.description}</p>
+        </Card>
       </div>
+    ))}
+  </Slider>
+</div>
+
       <div className="page-footer">
         <Footer />
       </div>

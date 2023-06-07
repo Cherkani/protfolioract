@@ -24,7 +24,7 @@ const Projects = () => {
 				<NavBar active="projects" />
 				<div className="content-wrapper">
 					
-					<div className="projects-container">
+					
 					<Heading className="skills-heading">
 				
 				<FontAwesomeIcon icon={faCode} className="skills-icon" />
@@ -34,7 +34,7 @@ const Projects = () => {
 						<div className="projects-list">
 							<AllProjects />
 						</div>
-					</div>
+					
 					<div className="page-footer">
 						<Footer />
 					</div>
