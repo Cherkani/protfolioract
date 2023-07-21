@@ -18,23 +18,29 @@ const Articles = () => {
     {
       id: 1,
      
-      image: 'c1.png',
+      image: 'c5.jpeg',
      
     },
     {
       id: 2,
      
-      image: 'c2.png',
+      image: 'c6.png',
      
     },
     {
       id: 3,
+     
+      image: 'c2.png',
+     
+    },
+    {
+      id: 4,
     
       image: 'c3.png',
     
     },
     {
-      id: 4,
+      id: 5,
      
       image: 'c4.png',
     
